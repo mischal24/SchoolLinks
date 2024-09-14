@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+body {
+    background-color: #DEDEDE;
+    background-image: url(assets/pattern.png);
+    animation: background-scroll 2s linear infinite;
+}
+
+@keyframes background-scroll {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -139px 139px;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#logo {
+    margin: 1vw;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    z-index: 2;
+}
+
+
+#logo:hover {
+    animation: logo-wiggle 1s linear;
+}
+
+@keyframes logo-wiggle {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%, 20% {
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%, 50%, 70%, 90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%, 60%, 80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+#logo img {
+    width: 8vh;
+    height: auto;
+    z-index: 1;
+}
+
+#links {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#links button {
+    margin: 1.5vw;
+    width: 15vh;
+    height: 15vh;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+#links button:hover {
+    transform: rotate(1.5deg) scale(125%);
+}
+
+#links button img {
+    width: max-content;
+    height: auto;
+    z-index: 1;
+}
+
+#links button:nth-child(1) img {
+    width: 11vh;
+}
