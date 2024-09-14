@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Outfit;
+    src: url(assets/Outfit-VariableFont_wght.ttf);
+}
+
 html, body {
     margin: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
+    overflow: hidden;
 }
 
 body {
@@ -73,6 +79,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(-5vh);
     z-index: 0;
 }
 
@@ -96,4 +103,18 @@ button {
 
 #links button:nth-child(1) img {
     width: 11vh;
+}
+
+#name {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10vh);
+    font-size: 4vh;
+    font-family: Outfit;
+    pointer-events: none;
+    z-index: 2;
 }

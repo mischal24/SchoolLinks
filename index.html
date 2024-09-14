@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
         <meta http-equiv="pragma" content="no-cache"/>
         <title>School Links</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -14,34 +15,44 @@
 
         <section id="links">
             <!-- Main site -->
-            <button onclick="window.location.replace('https://www.digipen.edu/')">
+            <button onclick="window.location.replace('https://www.digipen.edu/')" onmouseover="change_name('DigiPen Website')">
                 <img src="assets/digipen.svg" />
             </button>
 
             <!-- Self service -->
-            <button onclick="window.location.replace('https://selfservice.digipen.edu/student')">
+            <button onclick="window.location.replace('https://selfservice.digipen.edu/student')" onmouseover="change_name('Self Service')">
                 <img src="assets/room-service.svg" />
             </button>
 
             <!-- Roundcube -->
-            <button onclick="window.location.replace('https://webmail.digipen.edu/roundcube')">
+            <button onclick="window.location.replace('https://webmail.digipen.edu/roundcube')" onmouseover="change_name('Roundcube Inbox')">
                 <img src="assets/email.svg" />
             </button>
 
             <!-- Moodle -->
-            <button onclick="window.location.replace('https://distance.digipen.edu')">
+            <button onclick="window.location.replace('https://distance.digipen.edu')" onmouseover="change_name('Moodle')">
                 <img src="assets/school.svg" />
             </button>
 
             <!-- Housing -->
-            <button onclick="window.location.replace('https://housingapp.digipen.edu/Housing')">
+            <button onclick="window.location.replace('https://housingapp.digipen.edu/Housing')" onmouseover="change_name('Housing')">
                 <img src="assets/home.svg" />
             </button>
             
             <!-- Campus groups -->
-            <button onclick="window.location.replace('https://digipen.campusgroups.com')">
+            <button onclick="window.location.replace('https://digipen.campusgroups.com')" onmouseover="change_name('Campus Groups')">
                 <img src="assets/forum.svg" />
             </button>
         </section>
+
+        <h1 id="name">Hover over icons and choose where to go!</h1>
+
+        <script>
+            let name = document.getElementById('name');
+
+            function change_name(new_name) {
+                name.innerHTML = new_name;
+            }
+        </script>
     </body>
 </html>
