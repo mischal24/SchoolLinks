@@ -102,7 +102,7 @@ button {
 }
 
 #links button:nth-child(1) img {
-    width: 11vh;
+    width: 7vw;
 }
 
 #name {
@@ -113,8 +113,15 @@ button {
     justify-content: center;
     align-items: center;
     transform: translateY(10vh);
-    font-size: 4vh;
+    font-size: 4vw;
     font-family: Outfit;
+    text-align: center;
     pointer-events: none;
     z-index: 2;
+}
+
+@media (max-width: 1000px) {
+    #links button:nth-child(1) img {
+        width: 8vw;
+    }
 }
