@@ -105,6 +105,10 @@ button {
     width: 7vw;
 }
 
+#links button:nth-child(7) img {
+    transform: translateY(-0.7vw);
+}
+
 #name {
     position: absolute;
     width: 100%;
@@ -123,5 +127,9 @@ button {
 @media (max-width: 1000px) {
     #links button:nth-child(1) img {
         width: 8vw;
+    }
+
+    #links button:nth-child(7) img {
+        transform: translateY(-1vw);
     }
 }
