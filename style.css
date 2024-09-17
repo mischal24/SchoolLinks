@@ -117,7 +117,7 @@ button {
     justify-content: center;
     align-items: center;
     transform: translateY(10vh);
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: Outfit;
     text-align: center;
     pointer-events: none;
@@ -125,6 +125,10 @@ button {
 }
 
 @media (max-width: 1000px) {
+    #name {
+        font-size: 4vw;
+    }
+
     #links button:nth-child(1) img {
         width: 8vw;
     }
