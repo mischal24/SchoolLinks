@@ -109,6 +109,10 @@ button {
     transform: translateY(-0.7vw);
 }
 
+#links button:nth-child(8) img {
+    transform: translateY(-0.4vw);
+}
+
 #name {
     position: absolute;
     width: 100%;
@@ -135,5 +139,9 @@ button {
 
     #links button:nth-child(7) img {
         transform: translateY(-1vw);
+    }
+
+    #links button:nth-child(8) img {
+        transform: translateY(-0.8vw);
     }
 }
